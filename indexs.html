@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<link rel="stylesheet" href="style.css">
+		   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+				<title>Page title</title>
+</head>
+<body>
+				
+				
+    
+    <div class="main">
+    <div class="watch">CLOCK</div>
+    <div id="time" onclick="day()"></div>
+    <div id="samay"></div>
+    <div class="glass"></div>
+        <div class="inner">
+           <div class="twelve">12</div>
+           <div class="one"></div>
+           <div class="two"></div>
+           <div class="three">3</div>
+            <div class="four"></div>
+           <div class="five"></div>
+           <div class="six">6</div>
+            <div class="seven"></div>
+           <div class="eight"></div>
+           <div class="nine">9</div>
+            <div class="ten"></div>
+           <div class="eleven"></div>
+           <div class="center"></div>
+           <div class="name">Hossen's clock</div>
+           <div id="second"></div>
+           <div id="minute"></div>
+           <div id="hour"></div>
+        </div>
+    </div>
+        <script>
+            const dg = 6;
+            var sc = document.getElementById("second");
+            var mn = document.getElementById("minute");
+            var hr = document.getElementById("hour");
+            setInterval(() => {
+            var day = new Date();
+            var sec = day.getSeconds() * dg;
+            var min = day.getMinutes() * dg;
+            var hrs = day.getHours() * 30;
+            sc.style.transform = `rotateZ(${sec}deg)`;
+            mn.style.transform = `rotateZ(${min}deg)`;
+            hr.style.transform = `rotateZ(${hrs+(min/12)}deg)`;
+            });
+            function start() {
+            var today = new Date();
+            var hh = today.getHours();
+            var mm = today.getMinutes();
+            var ss = today.getSeconds();
+            if(hh>12){
+                hh=hh-12;
+            }
+            hh = hh>=10?hh:"0"+hh;
+            mm = mm>=10?mm:"0"+mm;
+            ss = ss>=10?ss:"0"+ss;
+            document.getElementById('time').innerHTML = hh+":"+mm+":"+ss;
+            var t = setTimeout(start, 1000);
+            }
+
+            start()
+        </script>
+        <script>
+        const day = () => {
+                var date = new Date();
+                var din = date.getDay();
+                switch(din){
+                    case 0: din = "Sunday"; break;
+                    case 1: din = "Monday"; break;
+                    case 2: din = "Tuesday"; break;
+                    case 3: din = "Wednesday"; break;
+                    case 4: din = "Thursday"; break;
+                    case 5: din = "Friday"; break;
+                    case 6: din = "Saturday"; break;
+                }
+                document.getElementById("samay").innerHTML = din;
+            }
+            
+            
+            </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+            
+        </script>
+   <script>
+       $(document).ready(function(){
+           $('#time').click(function(){
+             $('#time').fadeOut();
+               $('#samay').fadeIn();
+             })
+           });
+           $(document).ready(function(){
+           $('#samay').click(function(){
+             $('#samay').fadeOut();
+               $('#time').fadeIn();
+             })
+           });
+        
+        </script>
+        
+    </body>
+</html>
+				
+				
+				
+				
+				
+				
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>

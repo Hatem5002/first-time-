@@ -1,0 +1,246 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box ;
+}
+body{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center ;
+    background:ghostwhite;
+}
+.main{
+    height:220px;
+    width:220px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center ;
+    position:relative ;
+    background:ghostwhite;
+    box-shadow: 10px 10px 30px silver,
+                -1px -1px 30px silver;
+}
+.inner{
+    position:absolute ;
+    height:200px;
+    width:200px;
+    background:transparent ;
+    border-radius:50%;
+    border:1px solid silver;
+    box-shadow:inset 12px 12px 30px #cccccc,
+    12px 1px 20px #d5a5d5,
+    -2px 1px 20px aqua,
+    inset -12px -12px 30px #cccccc;
+    display:flex;
+    justify-content:center;
+    align-items:center ;
+}
+.twelve{
+    position:absolute ;
+    font-size:20px;
+    top:5%;
+    color:purple;
+    font-weight:bold;
+    
+}
+.three{
+    position:absolute ;
+    font-size:20px;
+    right:5%;
+    color:blue;
+    font-weight:bold;
+    
+}
+.six{
+    position:absolute ;
+    font-size:20px;
+    bottom:5%;
+    color:green;
+    font-weight:bold;
+    
+}
+.nine{
+    position:absolute ;
+    font-size:20px;
+    left:5%;
+    color:#FF1493;
+    font-weight:bold;
+    
+}
+.center{
+    position:absolute ;
+    height:8px;
+    width:8px;
+    background:crimson;
+    border-radius:50%;
+    z-index:2;
+}
+.one{
+    position:absolute ;
+    background:grey;
+    height:5px;
+    width:5px;
+    border-radius:50%;
+    right:30%;
+    top:14%;
+}
+.two{
+    position:absolute ;
+    background:#ffeaea;
+    height:5px;
+    width:5px;
+    border-radius:50%;
+    right:14%;
+    top:30%;
+}
+.four{
+    position:absolute ;
+    background:grey;
+    height:5px;
+    width:5px;
+    border-radius:50%;
+    right:14%;
+    bottom:30%;
+}
+.five{
+    position:absolute ;
+    background:grey;
+    height:5px;
+    width:5px;
+    border-radius:50%;
+    bottom:14%;
+    right:30%;
+}
+.seven{
+    position:absolute ;
+    background:grey;
+    height:5px;
+    width:5px;
+    border-radius:50%;
+    bottom:14%;
+    left:30%;
+}
+.eight{
+    position:absolute ;
+    background:grey;
+    height:5px;
+    width:5px;
+    border-radius:50%;
+    bottom:30%;
+    left:14%;
+}
+.ten{
+    position:absolute ;
+    background:grey;
+    height:5px;
+    width:5px;
+    border-radius:50%;
+    left:14%;
+    top:30%;
+}
+.eleven{
+    position:absolute ;
+    background:grey;
+    height:5px;
+    width:5px;
+    border-radius:50%;
+    left:30%;
+    top:14%;
+}
+#second{
+    position:absolute ;
+    height:90px;
+    width:1.5px;
+    background:crimson;
+    top:4.9%;
+    border-radius:10px;
+    transform-origin:bottom;
+    z-index:23;
+}
+#second::after{
+    content:"";
+    position:absolute ;
+    height:20px;
+    width:1.8px;
+    background:crimson;
+    top:100%;
+}
+#minute{
+    position:absolute ;
+    height:70px;
+    width:3px;
+    background:silver;
+    transform-origin:bottom ;
+    top:14.8%;
+    border-radius:100q;
+    transform:rotate(120deg);
+}
+#hour{
+    position:absolute ;
+    height:55px;
+    width:5px;
+    background:grey;
+    transform-origin:bottom ;
+    top:22.2%;
+    border-radius:100q;
+    transform:rotate(-90deg);
+}
+.glass{
+    position:absolute ;
+    height:220px;
+    width:220px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.8);
+}
+.name{
+    position:absolute ;
+    top:25%;
+    color:grey;
+}
+.watch{
+    position:absolute ;
+    background:linear-gradient(silver,transparent );
+    top:-50%;
+    font-size:80px;
+    font-weight:bold;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+#time{
+    position:absolute ;
+    color:ghostwhite;
+    text-shadow:1px 1px 5px grey,
+                -1px -1px 5px grey;
+    font-size:40px;
+    font-weight:bold;
+    bottom:-40%;
+    background:ghostwhite;
+    padding-right:20px;
+    padding-left:20px;
+    box-shadow:8px 8px 20px silver,
+               -2px -2px 15px silver;
+    border-radius:100px;
+    letter-spacing:1px;
+}
+#samay{
+    position:absolute ;
+    color:ghostwhite ;
+    text-shadow:1px 1px 5px grey,
+                -1px -1px 5px grey;
+    font-size:40px;
+    font-weight:bold;
+    bottom:-40%;
+    background:ghostwhite;
+    padding-right:20px;
+    padding-left:20px;
+    box-shadow:8px 8px 20px silver,
+               -2px -2px 15px silver;
+    border-radius:100px;
+    letter-spacing:1px;
+}
+
+
+
